@@ -1,7 +1,9 @@
 real   THRESHOLD = 10.0;
 
 string TEMP_DP = "BidCos-RF.JEQ0058916:1.TEMPERATURE";
+WriteLine(TEMP_DP);
 string VENT_DP = "BidCos-RF.SEQ3057205:1.STATE";
+WriteLine(VENT_DP);
 
 string SV_DAY   = "SV_LueftungBoostDatum";
 string SV_UNTIL = "SV_LueftungBoostBis";
