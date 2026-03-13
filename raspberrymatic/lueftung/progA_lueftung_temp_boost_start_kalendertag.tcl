@@ -1,4 +1,4 @@
-real   THRESHOLD = 18.0;
+real   THRESHOLD = 10.0;
 
 string TEMP_DP = "BidCos-RF.JEQ0058916:1.TEMPERATURE";
 string VENT_DP = "BidCos-RF.SEQ3057205:1.STATE";
