@@ -11,6 +11,9 @@ string SV_UNTIL = "SV_LueftungBoostBis";
 integer BOOST_SECONDS = 7200;
 
 real t = dom.GetObject(TEMP_DP).Value();
+WriteLine(t);
+WriteLine(dom.GetObject(VENT_DP).State());
+
 
 string today = system.Date("%Y-%m-%d");
 string nowS  = system.Date("%Y-%m-%d %H:%M:%S");
