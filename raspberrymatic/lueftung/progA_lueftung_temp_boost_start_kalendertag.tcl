@@ -16,8 +16,11 @@ string nowS  = system.Date("%Y-%m-%d %H:%M:%S");
 object svDay   = dom.GetObject(SV_DAY);
 object svUntil = dom.GetObject(SV_UNTIL);
 
-string lastDay = (svDay) ? svDay.Value().ToString() : "";
-string untilS  = (svUntil) ? svUntil.Value().ToString() : "";
+string lastDay = "";
+if (svDay) { lastDay = svDay.Value().ToString(); }
+
+string untilS = "";
+if (svUntil) { untilS = svUntil.Value().ToString(); }
 
 boolean boostActive = (untilS != "") && (nowS < untilS);
 
